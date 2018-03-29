@@ -18,3 +18,15 @@ Install the latest version with composer, you have to add a [private VCS reposit
   ]
 }
 ```
+
+Usage
+-----
+```php
+<?php
+require_once "vendor/autoload.php";
+
+use PropellerAds\Time\Time;
+
+$nextWeek = time() + Time::WEEK;
+echo 'Next week: '. date('Y-m-d', $nextWeek) . PHP_EOL;
+```
